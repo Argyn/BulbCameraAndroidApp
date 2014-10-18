@@ -1,4 +1,4 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.helper;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -25,7 +25,7 @@ public class BulbBuffer {
         int[] tempInt = new int[pixels.length];
         Bitmap temp;
 
-        try {
+        //try {
             temp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
 
             temp.getPixels(tempInt, 0, width, 0, 0, width, height);
@@ -40,7 +40,7 @@ public class BulbBuffer {
                 firstPixels = false;
             }
 
-        } catch(OutOfMemoryError ignored) { }
+        //} catch(OutOfMemoryError ignored) { }
 
     }
 

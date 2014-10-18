@@ -1,15 +1,15 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.activity;
 
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import kz.argyn.bulbcamera.fragments.NavigationDrawerFragment;
 import kz.argyn.bulbcamera.R;
 import kz.argyn.bulbcamera.fragments.BulbModeFragment;
-import kz.argyn.bulbcamera.fragments.CameraFragment;
 
 public class CameraActivity extends Activity implements NavigationDrawerFragment.NavigationDrawerCallbacks {
     private NavigationDrawerFragment mNavigationDrawerFragment;
@@ -19,15 +19,6 @@ public class CameraActivity extends Activity implements NavigationDrawerFragment
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // invoke navigation drawer
-        /*mNavigationDrawerFragment = (NavigationDrawerFragment)
-                getFragmentManager().findFragmentById(R.id.navigation_drawer);
-
-        // Set up the drawer.
-        mNavigationDrawerFragment.setUp(
-                R.id.navigation_drawer,
-                (DrawerLayout) findViewById(R.id.drawer_layout));*/
 
         FragmentTransaction frgTransaction = getFragmentManager().beginTransaction();
         frgTransaction.replace(R.id.container, new BulbModeFragment());

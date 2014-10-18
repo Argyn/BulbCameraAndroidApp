@@ -1,4 +1,4 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.factory;
 
 import java.io.File;
 

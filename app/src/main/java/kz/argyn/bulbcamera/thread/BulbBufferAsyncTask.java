@@ -1,6 +1,8 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.thread;
 
 import android.os.AsyncTask;
+
+import kz.argyn.bulbcamera.helper.BulbBuffer;
 
 /**
  * Created by argyn on 29/08/2014.

@@ -1,4 +1,4 @@
-package navigation_drawer;
+package kz.argyn.bulbcamera.navigation_drawer;
 
 /**
  * Created by argyn on 25/07/2014.

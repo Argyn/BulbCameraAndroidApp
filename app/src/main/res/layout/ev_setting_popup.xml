@@ -3,20 +3,93 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#CC646464"
     android:padding="10dp">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ev_layout_style"
+        android:padding="10dp">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exposition compensation value"
+        android:text="Exposure compensation"
+        android:textSize="20sp"
         android:id="@+id/textView" />
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount of light recieved by the camera"/>
     <SeekBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ev_setting_seek_bar"
         android:scrollbarStyle="insideOverlay"
-        style="@style/EvSettingSeekbar"
         android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_layout_style">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exposure time"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The length of time a camera's shutter is open when taking a photograph"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:id="@+id/exposure_time_setting"
+                android:scrollbarStyle="insideOverlay"
+                android:layout_gravity="center_horizontal" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/exposure_time_text_value"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:text="∞"
+                        android:textSize="20sp"/>
+                    <TextView
+                        android:id="@+id/min"
+                        android:paddingLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:textColor="#870020"
+                        android:text="min"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

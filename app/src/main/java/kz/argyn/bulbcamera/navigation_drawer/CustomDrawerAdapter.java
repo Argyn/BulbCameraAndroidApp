@@ -1,4 +1,4 @@
-package navigation_drawer;
+package kz.argyn.bulbcamera.navigation_drawer;
 
 import android.app.Activity;
 import android.content.Context;

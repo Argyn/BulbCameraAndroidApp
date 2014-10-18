@@ -1,4 +1,4 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.fragments;
 
 
 import android.app.Activity;
@@ -18,15 +18,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import navigation_drawer.CustomDrawerAdapter;
-import navigation_drawer.DrawerItem;
+import kz.argyn.bulbcamera.R;
+import kz.argyn.bulbcamera.navigation_drawer.CustomDrawerAdapter;
+import kz.argyn.bulbcamera.navigation_drawer.DrawerItem;
 
 /**
  * Fragment used for managing interactions for and presentation of a navigation drawer.

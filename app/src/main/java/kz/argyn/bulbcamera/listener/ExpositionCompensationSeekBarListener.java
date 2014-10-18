@@ -1,20 +1,18 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.listener;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.widget.SeekBar;
 
+import kz.argyn.bulbcamera.helper.CameraHelper;
+
 /**
  * Created by argyn on 31/08/2014.
  */
 public class ExpositionCompensationSeekBarListener implements SeekBar.OnSeekBarChangeListener {
-    private SharedPreferences settings;
-    private SharedPreferences.Editor editor;
     private CameraHelper cameraHelper;
 
     public ExpositionCompensationSeekBarListener(Context context, CameraHelper cameraHelper) {
-        settings = context.getSharedPreferences(Settings.SETTINGS_FILE, 0);
-        editor = settings.edit();
         this.cameraHelper = cameraHelper;
     }
 

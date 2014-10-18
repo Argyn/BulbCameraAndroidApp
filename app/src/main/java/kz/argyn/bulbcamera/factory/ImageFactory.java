@@ -1,4 +1,4 @@
-package kz.argyn.bulbcamera;
+package kz.argyn.bulbcamera.factory;
 
 import android.content.Context;
 import android.graphics.Bitmap;

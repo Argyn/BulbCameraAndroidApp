@@ -14,7 +14,7 @@
     <FrameLayout
         android:id="@+id/take_picture_button"
         android:layout_width="fill_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="#33aaaaaa">
@@ -25,41 +25,34 @@
             android:layout_gravity="center">
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:visibility="visible"
                 android:id="@+id/start_bulb"
-                android:src="@drawable/camera"
-                android:layout_gravity="center"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:visibility="invisible"
-                android:id="@+id/stop_bulb"
-                android:src="@drawable/stop_bulb"
+                android:src="@drawable/bulb_mode_start"
                 android:layout_gravity="center"/>
         </FrameLayout>
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:id="@+id/bulb_settings_buttom"
-            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="start|center_horizontal|center_vertical"
             android:padding="5dp"
-            android:src="@drawable/settings"/>
+            android:src="@drawable/wheels"/>
 
             <FrameLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end|center_vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="00"
-                    android:visibility="invisible"
-                    android:background="@drawable/timerbg"
-                    android:textColor="#FFFFFF"
-                    android:textSize="25sp"
-                    android:id="@+id/timerText"
+                android:layout_height="fill_parent"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginRight="10dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/bulb"
+                    android:id="@+id/resultingImage"
+                    android:background="@drawable/thumbinal"
                     android:layout_gravity="end|center_horizontal|center_vertical"/>
+
             </FrameLayout>
     </FrameLayout>
 
@@ -81,4 +74,16 @@
             android:padding="5dp"
             android:id="@+id/textView"/>
     </FrameLayout>
+
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/counter"
+        android:layout_above="@+id/take_picture_button"
+        android:layout_marginBottom="5dp"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
